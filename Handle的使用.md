@@ -102,3 +102,5 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 布局同<录制播放音频.md>
+其实上面的还是有点问题，就是上面的handle我只能传一次数据进去，传多次就不行了。
+解决办法，将 mMyToastHandler 这个变量移到外层进行初始化，不使用单例模式即可。
