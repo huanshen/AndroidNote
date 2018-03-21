@@ -64,4 +64,6 @@ public class DBControl extends MovieBaseDBControl{
         return mInstance;
     }
 
+
+
 }

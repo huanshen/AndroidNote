@@ -3,9 +3,12 @@ package com.example.shenjiaqi.myapplication.MySQL;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 import android.widget.Toast;
 
 public class MyDatabaseHelper extends SQLiteOpenHelper {
+
+    private static final String TAG = "MyDatabaseHelper";
 
     public static final String CREATE_BOOK = "create table Movie ("
             + "id integer primary key autoincrement, "
@@ -39,5 +42,4 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("drop table if exists Category");
         onCreate(db);
     }
-
 }

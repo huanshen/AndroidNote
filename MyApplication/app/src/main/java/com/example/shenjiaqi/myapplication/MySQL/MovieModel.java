@@ -117,6 +117,7 @@ public class MovieModel {
         private int max;
         private int average;
 
+
         public static Rating toModel(JSONObject jsonObject) {
             Rating rating = new Rating();
             try {
